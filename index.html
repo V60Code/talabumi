@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talabumi Kopi</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script defer src="assets/scripts/scripts.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1 class="logo">Talabumi Kopi</h1>
+        <nav>
+            <ul>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#barista">Barista</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">🌙 Mode Gelap</button>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Artikel: Tentang Kami -->
+        <article id="tentang">
+            <h2>Tentang Kami</h2>
+            <p>Selamat datang di Talabumi Kopi, tempat terbaik untuk menikmati kopi berkualitas tinggi dengan suasana nyaman.</p>
+        </article>
+
+        <!-- Menu Kopi dengan Slider -->
+        <div class="menu-container">
+          <button id="prev" class="slider-btn">❮</button>
+          <div class="menu-wrapper">
+              <div class="menu-slider">
+                  <div class="menu-item">
+                      <img src="assets/image/coffee1.jpg" alt="Espresso">
+                      <h3>Espresso</h3>
+                      <p>Rp 20.000</p>
+                  </div>
+                  <div class="menu-item">
+                      <img src="assets/image/coffee2.jpg" alt="Latte">
+                      <h3>Latte</h3>
+                      <p>Rp 25.000</p>
+                  </div>
+                  <div class="menu-item">
+                      <img src="assets/image/coffee3.jpg" alt="Cappuccino">
+                      <h3>Cappuccino</h3>
+                      <p>Rp 27.000</p>
+                  </div>
+                  <div class="menu-item">
+                      <img src="assets/image/coffee4.jpg" alt="Macchiato">
+                      <h3>Macchiato</h3>
+                      <p>Rp 30.000</p>
+                  </div>
+                  <div class="menu-item">
+                      <img src="assets/image/coffee5.jpg" alt="Mocha">
+                      <h3>Mocha</h3>
+                      <p>Rp 32.000</p>
+                  </div>
+              </div>
+          </div>
+          <button id="next" class="slider-btn">❯</button>
+      </div>
+      
+
+        <!-- Aside: Barista Kami -->
+        <aside id="barista">
+            <h2>Barista Kami</h2>
+            <img src="assets/image/barista.jpg" alt="Barista">
+            <p>Kenali barista terbaik kami yang menyajikan kopi dengan penuh cinta.</p>
+        </aside>
+
+        <!-- Formulir Kontak -->
+        <section id="kontak">
+          <h2>Hubungi Kami</h2>
+          <div class="contact-container">
+              <!-- Formulir -->
+              <form id="contact-form">
+                  <label for="name">Nama:</label>
+                  <input type="text" id="name" required>
+                  
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" required>
+                  
+                  <label for="message">Pesan:</label>
+                  <textarea id="message" required></textarea>
+                  
+                  <button type="submit">Kirim</button>
+                  <p id="success-message" style="display:none; color: green;">Pesan berhasil terkirim!</p>
+              </form>
+      
+              <!-- Alamat -->
+              <div class="alamat">
+                  <h3>Alamat</h3>
+                  <p>Jl. Kopi Sejahtera No. 45, Yogyakarta</p>
+                  <p>Telepon: 0812-3456-7890</p>
+                  <p>Email: info@talabumikopi.com</p>
+              </div>
+          </div>
+      </section>      
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Talabumi Kopi | Dibuat dengan ❤️ oleh Developer</p>
+    </footer>
+</body>
+</html>
